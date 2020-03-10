@@ -1,0 +1,88 @@
+body,html{margin:0 auto;
+  padding: 0;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  min-width: 6.4rem; 
+  font-family: PingFangSC,helvetica neue,hiragino sans gb,arial,microsoft yahei ui,microsoft yahei,simsun,sans-serif!important; 
+  background: #f2f2f2;}
+body{font-size: 0.28rem}
+ul,ol,li,p,dd,dl,h1,h2,h3 { list-style-type: none; margin: 0;padding: 0;}
+a { text-decoration: none;cursor: pointer;color: #333}
+a:hover{color: #0373ea}
+img{border:0;}
+i,em{font-style: normal;}
+.left,
+.fl{float: left;}
+.right,
+.fr{float: right;} 
+.clear:after,
+.clearfix::after{content: " "; display: block; height: 0; clear: both;visibility: hidden;}
+/*多少行省略号*/
+.ellipsis{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis}
+.ellipsis_2{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.ellipsis_3{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+
+
+
+/*其他公用*/ 
+.clo_3{color: #333}
+.clo_9{color: #999}
+.clo_6{color: #666} 
+.flex_column{display: flex;flex-direction: column; }
+.flex_row{display: flex;flex-direction: row; } 
+.c_bg{
+  color: #fff;
+  background: linear-gradient(270deg,#ff4e18,#f10100);
+}
+
+.bottom_nav{
+background: #fff;
+font-size: 0.32rem;
+position: fixed;
+bottom: 0;
+height: 0.8rem;
+line-height: 0.8rem;
+left: 0;
+width: 100%;
+text-align: center;
+}
+.bottom_nav ul{ 
+display: flex;
+}
+.bottom_nav li{
+flex: 1
+}
+.bottom_nav .active{
+color: #fff;
+background: linear-gradient(270deg,#ff4e18,#f10100);
+}
+.r_supply{
+  background: #2c8efb;
+  color: #fff;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.24rem;
+  display: inline-block;
+  margin-right:0.15rem;
+  text-align: center;}
+.r_pur{ 
+  background: #f3dd26;
+    color: #fff;
+    width: 0.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.24rem;
+    display: inline-block;
+    margin-right:0.15rem;
+    text-align: center;
+}
+.request {position: relative;}
+.request::before{
+  content: '*';
+  color:red;
+  margin-right: 0.05rem;
+}
